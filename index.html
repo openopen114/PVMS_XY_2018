@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+	<title>PVMS_XY</title>
+
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+	<!-- material-icons -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<!-- google font -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Heebo:100" rel="stylesheet">
+
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="css/flexbox.css">
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+	<!-- nav -->
+	<nav>
+		<div class="nav-wrapper">
+			<!-- <a href="#" class="brand-logo">XYSOLAR</a> -->
+			<a href="#" class="brand-logo flex align-center">
+				<img src="images/XYSOLAR_PVMS_logo.png">
+			</a>
+			<ul id="nav-mobile" class="right hide-on-med-and-down">
+				<li><a href="sass.html">逆變器</a></li>
+				<li><a href="badges.html">環境數據</a></li>
+				<li><a href="collapsible.html">數位電表</a></li>
+			</ul>
+		</div>
+	</nav>
+	<!-- end of nav -->
+
+
+
+	<!-- main info dashboard -->
+	<div class="row mainInfo">
+		<!-- case info -->
+		<div class="col s12 l3 caseInfo">
+			<!-- title -->
+			<div class="caseInfoData">
+				<div class="title">
+					<div><h4>向陽廠辦</h4></div>
+					<div><h5>248.88 <span>kWp</span> </h5></div> 
+				</div>
+				<h5>嘉義 - 朴子</h5>
+			</div>
+
+			<div class="caseInfoTotal">
+				<!-- 累計總發電量 -->
+				<div class="total">
+					<div><h5>累計總發電量：</h5></div> 
+					<div class="valueUnit"> 
+						 <h5>988,888</h5>
+						 <h6>度</h6>
+					</div>
+				</div>	
+				<!-- 今日發電營收 -->
+				<div class="total">
+					<div><h5>今日發電營收：</h5></div> 
+					<div class="valueUnit">
+						 <h6>NTD</h6>
+						 <h5>12,354</h5>
+						 <h6>元</h6>
+					</div>
+				</div>	
+				<!-- 累計總發電量 -->
+				<div class="total">
+					<div><h5>累計發電營收：</h5></div> 
+					<div class="valueUnit">
+						 <h6>NTD</h6>
+						 <h5>6,340,750</h5>
+						 <h6>元</h6>
+					</div>
+				</div>	
+			</div>
+			<!-- end of caseInfoTotal -->
+		</div>
+		<!-- end fo caseInfo -->
+
+	
+		<!-- case power info -->
+		<div class="col s12 l9 casePowerInfo">
+
+			<div class="row">
+				<!-- time stamp -->
+				<div class="col s12 m12 l12 timeStamp">
+					<p>狀態：</p>
+					<div class="status">正常</div>
+					<p>更新時間： <span>2018-09-13 15:22:00</span> </p> 
+				</div>
+					
+				<!-- power info -->
+				<div class="col s12 m12 l12 powerInfoArea">
+					<div class="col s6 m4 l4 ">
+						<div class="powerValue">45.1</div>
+						<p>即時發電量(kW)</p>
+					</div>
+					<div class="col s6 m4 l4 ">
+						<div class="powerValue">988</div>
+						<p>今日發電量(kWh)</p>
+					</div>
+					<div class="col s6 m4 l4 ">
+						<div class="powerValue">3.8</div>
+						<p>日照時數(小時)</p>
+
+						<!-- 
+						今日累計發電度數 / 系統建置量 
+						 -->
+
+					</div>
+					<div class="col s6 m4 l4 ">
+						<div class="powerValue">98</div>
+						<p>逆變器效率(%)</p>
+						<!--  
+
+						逆變器效率(%)算法
+
+						功率W = 電壓V  * 電流A
+						逆變器效率 = (交流總功率) / (直流總功率)
+
+						交流總功率 =  AC_V_01 * AC_A_01 + AC_V_02 * AC_A_02 + ...
+						直流總功率 =  DC_V_01 * DC_A_01 + DC_V_02 * DC_A_02 + ...
+
+						-->
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<!-- end of case power info -->
+	</div>
+	<!-- end of main info dashboard -->
+
+
+	<!-- addition info dashboard -->
+	<div class="row additionInfoArea">
+		
+		<!--  環境資訊 -->
+		<div class="col s12 m4 l4 additionAreaCard">
+			<div class="additionCardTitle">
+				<i class="material-icons">&#xE430;</i>
+				<h1>環境資訊</h1>
+			</div>
+
+			<div class="addtionDataContent">
+				<h1 class="addi_title">日照強度:</h1>
+				<h1 class="addi_value">345</h1> 
+				<h1 class="addi_unit">W/m&sup2;</h1>  
+			</div>
+
+			<div class="addtionDataContent">
+				<h1 class="addi_title">環境溫度:</h1>
+				<h1 class="addi_value">18</h1> 
+				<h1 class="addi_unit">&#8451;</h1>  
+			</div>
+
+			<div class="addtionDataContent">
+				<h1 class="addi_title">電站即時PR值:</h1>
+				<h1 class="addi_value">---</h1> 
+				<h1 class="addi_unit">%</h1>  
+
+				<!-- 
+					電站即時PR值 (過去一小時電站的表現比值)
+
+					let kwh_1hr = 過去 1 小時 電站發電量(度)
+					let kwp = 電站建置容量
+					let esh = 等效日照時數
+
+					等效日照時數 1 小時  = 1000 W/m^2 * 1小時
+									  = 1000 * 60(分)        // 收集器資料更新間隔以分為單位
+
+					假設收集器每 5 分鐘收集一筆日照數據，則等效日照時數
+
+					       SUM( 過去一小時每筆日照數據)  * 5 
+					= 一一一一一一一一一一一一一一一一一一一一一一一一
+					 			 (1000 * 60)
+
+
+					PR = kwh_1hr / (kwp * esh)
+
+				 -->
+			</div>
+		</div>
+
+		<!--  減碳成效 -->
+		<div class="col s12 m4 l4 additionAreaCard">
+			<div class="additionCardTitle">
+				<i class="material-icons">&#xE52D;</i>
+				<h1>減碳成效</h1>
+			</div>
+
+			<div class="addtionDataContent">
+				<h1 class="addi_title">減碳量:</h1>
+				<h1 class="addi_value">522,132</h1> 
+				<h1 class="addi_unit">CO2e</h1>  
+				<!-- 
+				減碳量 = 總發電度數 * 0.521 / 1000;
+
+				 -->
+			</div>
+
+			<div class="addtionDataContent">
+				<h1 class="addi_title">種樹量:</h1>
+				<h1 class="addi_value">13,388</h1> 
+				<h1 class="addi_unit">顆</h1>  
+
+				<!--  
+        		減碳量 / 1.875 * 1000;
+				 -->
+			</div> 
+		</div>
+
+
+		<!--  逆變器資訊 -->
+		<div class="col s12 m4 l4 additionAreaCard">
+			<div class="additionCardTitle">
+				<i class="material-icons">&#xE336;</i>
+				<h1>逆變器資訊</h1>
+			</div>
+
+			<div class="addtionDataContent">
+				<h1 class="addi_title">運作狀態:</h1>
+				<h1 class="addi_value" id="inv_status">正常</h1>  
+			</div>
+
+			<div class="invPageContent">
+				<a href="" target="_blank">前往逆變器詳細資訊頁面</a>
+				<i class="material-icons">&#xE5C8;</i>
+			</div>
+		</div>
+
+
+
+	 
+
+
+
+
+	</div>
+
+	<!-- end of addition info dashboard -->
+
+
+
+	
+	
+</body>
+</html>

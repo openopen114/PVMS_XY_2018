@@ -1,0 +1,279 @@
+ 
+body{
+	font-family: "Microsoft JhengHei", sans-serif;
+}
+
+/*************************/
+/*          nav          */
+/*************************/
+.nav-wrapper{
+	background-color: #323F4F;
+}
+
+
+.brand-logo{
+	margin-left: 8px;
+	font-family: 'Montserrat', sans-serif;	 
+}
+
+.brand-logo img{
+	width: 128px;
+	height: 28px; 
+}
+
+
+
+
+/*************************/
+/*      main info        */
+/*************************/
+ 
+.caseInfo{
+	height: 380px;
+	background-color: #009DE4;
+	display:flex;
+	flex-direction:column;
+	font-family: 'Heebo', sans-serif;
+}
+
+
+.caseInfoData{ 
+	margin-top: 4px;
+	height: 180px;
+	color: #fff;
+	
+}
+
+
+.caseInfoData .title {
+	width: 100%;
+	height: 35%;
+	display:inline-flex;
+	justify-content:space-between;
+	align-items:baseline; 
+	border-bottom: 3px solid #fff;
+	
+}
+
+
+.caseInfoData   h5{
+	font-size: 20px;
+}
+
+
+
+
+.caseInfoTotal{ 
+	height: 120px;
+	margin-top: 80px; 
+}
+
+.caseInfoTotal h5{
+	color: #fff;
+	font-size: 20px;
+}
+
+.caseInfoTotal .total{
+	width: 100%;
+	height: 28px;
+	display:inline-flex;
+	justify-content:space-between;
+	align-items:baseline; 
+}
+
+.total .valueUnit{
+	display:inline-flex;
+	align-items:baseline; 
+	color: #fff;
+}
+.total .valueUnit h5 {
+	margin-left: 8px;
+	margin-right: 8px;
+}
+
+
+
+
+/*************************/
+/*    case power info    */
+/*************************/
+
+.casePowerInfo{
+	height: 380px;
+	background-color: #DEE2E6;
+	color: #658598;
+}
+
+.status{
+	width: 50px;
+	height: 18px;
+	border-radius: 2px;
+	background-color: #30BEB1;
+	display:inline-flex; 
+	align-items:center;
+	justify-content:center;
+	font-size: 10px;
+	color: #fff;
+	margin-right: 8px;
+}
+
+.timeStamp{
+	height: 60px; 
+	display:inline-flex;
+	justify-content:flex-end;
+	align-items:center;
+}
+
+.powerInfoArea{
+	height: 320px; 
+	display:inline-flex;
+	justify-content:flex-start;
+	align-items:center;
+	font-size: 15px
+}
+
+
+.powerInfoArea .col{
+	height: 220px; 
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction:column; 
+	border-right: 1px solid #648595;
+}
+
+ 
+
+
+.powerValue{
+	color: #019BE5;
+	font-family: 'Heebo', sans-serif;
+	font-size: 95px;
+	margin-bottom: -25px
+
+}
+
+ 
+ @media only screen and (max-width: 540px){
+ 	.powerInfoArea{
+ 		display:inline-flex;
+    	flex-wrap:wrap;
+ 	}
+
+ 	.powerInfoArea .col{  
+		border-right: 0px solid #648595;
+		margin-top: -50px;
+	}
+
+
+	.powerValue{
+		color: #019BE5;
+		font-family: 'Heebo', sans-serif;
+		font-size: 65px;
+		margin-bottom: -25px
+	}
+ }
+
+
+
+
+
+/*************************/
+/*addition info dashboard*/
+/*************************/
+
+
+.additionAreaCard{
+	height: 300px; 
+	color: #7E8C8D;
+}
+
+
+
+.additionCardTitle{
+	width: 100%;
+	height: 60px;
+	display:inline-flex;
+	justify-content:flex-start;
+	align-items:center;
+	border-bottom: 3px solid #3DA9F4;
+} 
+
+.additionCardTitle i {
+	font-size: 28px;
+	margin-right: 16px;
+	margin-top: 5px;
+	margin-left: 8px;
+	color: #2BBE9C;
+}
+
+
+.additionCardTitle h1 {
+	font-size: 22px;
+}
+
+
+
+.addtionDataContent{
+	display: flex;
+	align-items:center; 
+	height: 70px;
+	/* flex-wrap:nowrap;  */
+}
+
+
+/* .addtionDataContent h1{
+	font-size: 21px;
+	color: red;
+}
+
+ */
+.addi_title{ 
+	 width:40%;
+	 font-size: 18px;
+}
+.addi_value{  
+	display:flex;
+	justify-content:flex-end;
+	width:40%;
+	font-size: 25px;
+	color: #3DA9F4;
+	margin-right: 10px;
+	font-family: 'Heebo', sans-serif;
+}
+
+
+.addi_value:nth-child(3){color: red;} 
+
+.addi_unit{  
+	display:flex;
+	justify-content:flex-start;
+	width:10%;
+	font-size: 18px;
+}
+
+
+.invPageContent {
+	display:flex;
+	align-items:center;
+}
+
+.invPageContent  a{
+	font-family: "Microsoft JhengHei", sans-serif;
+	font-size: 18px;
+	color: #019BE5; 
+	margin-top: 25px;
+}
+
+.invPageContent  i{
+	font-size: 24px;
+	color: #019BE5;
+	margin-left: 8px; 
+	margin-top: 25px;
+}
+
+#inv_status{
+	font-family: "Microsoft JhengHei", sans-serif;
+	font-size: 19px;
+	color: #019BE5;
+}
