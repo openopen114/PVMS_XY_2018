@@ -1,0 +1,127 @@
+ 
+body{
+	font-family: "Microsoft JhengHei", sans-serif;
+	background-color: #F1F2F6;
+}
+
+/*************************/
+/*          nav          */
+/*************************/
+.nav-wrapper{
+	background-color: #323F4F;
+}
+
+
+.brand-logo{
+	margin-left: 8px;
+	font-family: 'Montserrat', sans-serif;	 
+}
+
+.brand-logo img{
+	width: 128px;
+	height: 28px; 
+}
+
+
+
+/*************************/
+/*        inv area      */
+/*************************/
+.invArea{
+	padding: 36px; 
+}
+
+.invArea .col{
+	height: 82vh;
+	background-color: #fff; 
+}
+
+
+.invNav img{
+	width: 70%;
+	margin-top: 16px;
+	margin-left: 8px;
+	margin-bottom: 16px;
+}
+
+.invList{
+	width: 100%;
+	height: 65vh;
+	overflow: scroll;  
+}
+
+
+.invStatus{
+	display:flex;
+	align-items:baseline;
+}
+
+.invStatus h3{
+	margin-left: 8px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	color: #607D8B;
+}
+
+.invStatus img{
+	margin-left: 60px;
+	width: 12px;
+}
+
+.invContent{
+	width: 100%;
+	height: 82vh;
+	overflow: scroll; 
+	font-family: 'Montserrat', sans-serif; 
+	color: #455A64;
+}
+
+
+ 
+ @media only screen and (max-width: 540px){
+	.hideInMobile{
+		display: none;
+	}
+
+	.circle{ 
+		border: 15px solid #fff;
+	}
+
+	/* select option font color */
+	.select-wrapper ul li>span {
+		color: #2196f3;
+	}
+
+	.invArea .col:nth-child(1) {
+		height: 280px;   
+	}
+
+	.invNav{ 
+		height: 200px; 
+		overflow: hidden;  
+	}
+
+	.invList{
+		width: 100%;
+		height: 160px;   
+	}
+
+	.input-field{  
+		margin-top: 28px; 
+	}
+
+}
+
+
+@media only screen and (min-width: 540px){
+	 
+
+	.input-field{  
+		display: none;
+	}
+
+}
+
+
+
+ 

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+	<title>PVMS_XY</title>
+
+		<!-- jQuery -->
+	<script
+	src="http://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous"></script>
+
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+
+
+	<!-- material-icons -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<!-- google font -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Heebo:100" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
+
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="css/flexbox.css">
+	<link rel="stylesheet" href="css/inverter.css">
+</head>
+<body>
+
+	<!-- nav -->
+	<nav>
+		<div class="nav-wrapper">
+			<!-- <a href="#" class="brand-logo">XYSOLAR</a> -->
+			<a href="#" class="brand-logo flex align-center">
+				<img src="images/XYSOLAR_PVMS_logo.png">
+			</a>
+			<ul id="nav-mobile" class="right hide-on-med-and-down">
+				<li><a href="sass.html">逆變器</a></li>
+				<li><a href="badges.html">環境數據</a></li>
+				<li><a href="collapsible.html">數位電表</a></li>
+			</ul>
+		</div>
+	</nav>
+	<!-- end of nav -->
+
+
+	
+	<div class="row invArea">
+		<!-- inverter navigation panel -->
+		<div class="col s12 m2 l2 invNav">
+			<img src="images/allInv.png">
+
+			<!-- inverter list -->
+			<div class="invList"> 
+				<div class="invStatus hideInMobile">
+					<h3>Inverter 1</h3>
+					<img src="images/green.png" class="circle">
+				</div>
+
+				<div class="invStatus hideInMobile">
+					<h3>Inverter 2</h3>
+					<img src="images/green.png" class="circle">
+				</div>
+
+				<div class="invStatus hideInMobile">
+					<h3>Inverter 3</h3>
+					<img src="images/green.png" class="circle">
+				</div>
+
+				<div class="invStatus hideInMobile">
+					<h3>Inverter 4</h3>
+					<img src="images/green.png" class="circle">
+				</div>
+
+
+				<div class="invStatus hideInMobile">
+					<h3>Inverter 5</h3>
+					<img src="images/green.png" class="circle">
+				</div>
+
+				<div class="invStatus hideInMobile">
+					<h3>Inverter 6</h3>
+					<img src="images/green.png" class="circle">
+				</div>
+
+				<div class="invStatus hideInMobile">
+					<h3>Inverter 7</h3>
+					<img src="images/yellow.png" class="circle">
+				</div>
+
+				<div class="invStatus hideInMobile">
+					<h3>Inverter 8</h3>
+					<img src="images/red.png" class="circle">
+				</div>
+
+				<div class="invStatus hideInMobile">
+					<h3>Inverter 9</h3>
+					<img src="images/green.png" class="circle">
+				</div>
+
+
+				<div class="invStatus hideInMobile">
+					<h3>Inverter 10</h3>
+					<img src="images/green.png" class="circle">
+				</div>
+
+				<div class="invStatus hideInMobile">
+					<h3>Inverter 11</h3>
+					<img src="images/green.png" class="circle">
+				</div>
+
+
+				<div class="input-field col s12">
+					<select >
+						<option value=""  data-icon="images/green.png" class="circle" selected>Inverter 1</option>
+
+						<option value="" data-icon="images/red.png" class="circle">Inverter 2</option>
+						<option value=""  data-icon="images/green.png" class="circle">Inverter 3</option>
+						<option value="" data-icon="images/yellow.png" class="circle">Inverter 4</option>
+						<option value="" data-icon="images/red.png" class="circle">Inverter 5</option>
+						<option value=""  data-icon="images/green.png" class="circle">Inverter 6</option>
+						<option value="" data-icon="images/yellow.png" class="circle">Inverter 7</option>
+
+						<option value="" data-icon="images/red.png" class="circle">example 8</option>
+						<option value=""  data-icon="images/green.png" class="circle">example 9</option>
+						<option value="" data-icon="images/yellow.png" class="circle">example 10</option>
+						<option value="" data-icon="images/red.png" class="circle">example 11</option> 
+					</select>
+					<label>Inverter List</label>
+				</div>
+			</div>
+		</div>
+		<!-- end of inverter navigation panel -->
+
+		<!-- inverter content  -->
+		<div class="col s12 m10 l10 invContent">
+			<table>
+				<thead>
+					<tr>
+						<th>設備名稱</th>
+						<th>值</th>
+						<th class="hideInMobile">查詢</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr>
+						<td>輸出功率</td>
+						<td>1.1 kw</td>
+						<td><i class="material-icons hideInMobile">open_in_new</i></td>
+					</tr>
+					<tr>
+						<td>當日即時總輸出功率</td>
+						<td>3.1 kWh</td>
+						<td><i class="material-icons hideInMobile">open_in_new</i></td>
+					</tr>
+					<tr>
+						<td>總輸出功率</td>
+						<td>71,740 kWh</td>
+						<td><i class="material-icons hideInMobile">open_in_new</i></td>
+					</tr>
+					<tr>
+						<td>L1 AC電壓</td>
+						<td>239 V</td>
+						<td><i class="material-icons hideInMobile">open_in_new</i></td>
+					</tr>
+					<tr>
+						<td>L2 AC電壓</td>
+						<td>242 V</td>
+						<td><i class="material-icons hideInMobile">open_in_new</i></td>
+					</tr>
+					<tr>
+						<td>L1-L2 AC電壓</td>
+						<td>415 V</td>
+						<td><i class="material-icons hideInMobile">open_in_new</i></td>
+					</tr>
+					<tr>
+						<td>L2-L3 AC電壓</td>
+						<td>417 V</td>
+						<td><i class="material-icons hideInMobile">open_in_new</i></td>
+					</tr>
+					<tr>
+						<td>L1 AC輸出電流</td>
+						<td>2 A</td>
+						<td><i class="material-icons hideInMobile">open_in_new</i></td>
+					</tr>
+					<tr>
+						<td>L2 AC輸出電流</td>
+						<td>2 A</td>
+						<td><i class="material-icons hideInMobile">open_in_new</i></td>
+					</tr>
+					<tr>
+						<td>L1 AC頻率</td>
+						<td>60 Hz</td>
+						<td><i class="material-icons hideInMobile">open_in_new</i></td>
+					</tr>
+					<tr>
+						<td>DC Bus Positive Voltage</td>
+						<td>364 V</td>
+						<td><i class="material-icons hideInMobile">open_in_new</i></td>
+					</tr>
+					<tr>
+						<td>逆變器內部溫度</td>
+						<td>26 ℃</td>
+						<td><i class="material-icons hideInMobile">open_in_new</i></td>
+					</tr>
+					<tr>
+						<td>逆變器散熱溫度</td>
+						<td>23 ℃</td>
+						<td><i class="material-icons hideInMobile">open_in_new</i></td>
+					</tr>
+					<tr>
+						<td>DC1 輸入電壓</td>
+						<td>728 V</td>
+						<td><i class="material-icons hideInMobile">open_in_new</i></td>
+					</tr>
+					<tr>
+						<td>DC2 輸入電壓</td>
+						<td>761 V</td>
+						<td><i class="material-icons hideInMobile">open_in_new</i></td>
+					</tr>
+					<tr>
+						<td>A輸入功率</td>
+						<td>3 kW</td>
+						<td><i class="material-icons hideInMobile">open_in_new</i></td>
+					</tr>
+					<tr>
+						<td>B輸入功率</td>
+						<td>3 kW</td>
+						<td><i class="material-icons hideInMobile">open_in_new</i></td>
+					</tr>
+					
+					<tr>
+						<td>L2 AC頻率</td>
+						<td>60 Hz</td>
+						<td><i class="material-icons hideInMobile">open_in_new</i></td>
+					</tr>
+					<tr>
+						<td>L3 AC電壓</td>
+						<td>236 V</td>
+						<td><i class="material-icons hideInMobile">open_in_new</i></td>
+					</tr>
+					<tr>
+						<td>L3-L1 AC電壓</td>
+						<td>416 V</td>
+						<td><i class="material-icons hideInMobile">open_in_new</i></td>
+					</tr>
+					<tr>
+						<td>L3 AC頻率</td>
+						<td>59 Hz</td>
+						<td><i class="material-icons hideInMobile">open_in_new</i></td>
+					</tr>
+					<tr>
+						<td>L3 AC輸出電流</td>
+						<td>8 A</td>
+						<td><i class="material-icons hideInMobile">open_in_new</i></td>
+					</tr>
+					 
+					<!-- PR值、種樹量、減碳量 數值前一頁有，這一頁就沒有放了 -->
+				</tbody>
+			</table>
+
+		</div>
+		<!-- end of inverter content  -->
+
+	</div>
+
+
+	
+
+
+	
+	
+</body>
+
+ <script type="text/javascript">
+		$(document).ready(function() {
+			$('select').material_select();
+			console.log("123")
+		});
+	</script>
+</html>
