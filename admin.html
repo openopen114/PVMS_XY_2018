@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+	<title>PVMS_XY</title>
+
+		<!-- jQuery -->
+	<script
+	src="https://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous"></script>
+
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+
+
+	<!-- material-icons -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	 
+	 <!-- google font -->
+	<!-- <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet"> -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Advent+Pro:100|Cabin:700|Hind:700|Questrial" rel="stylesheet">
+	<!-- <link href="https://fonts.googleapis.com/css?family=NTR" rel="stylesheet"> -->
+	
+ 
+
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="css/flexbox.css">
+	<link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+
+	<!-- nav -->
+	<nav>
+		<div class="nav-wrapper">
+			<!-- <a href="#" class="brand-logo">XYSOLAR</a> -->
+			<a href="#" class="brand-logo flex align-center">
+				<img src="images/XYSOLAR_PVMS_logo.png">
+			</a>
+			<ul id="nav-mobile" class="right hide-on-med-and-down">
+				<li><a href=" ">登出</a></li> 
+			</ul>
+		</div>
+	</nav>
+
+
+	<!-- Parallax -->
+	<div class="parallax-container">
+     	 <div class="parallax">
+     	 	<img src="images/admin_bg_xy-compressor.jpg"> 
+     	 </div>
+
+     	 <div class="header">
+     	 	<h4>XYSOLAR</h4>
+     	 	<h1>PV Monitoring System</h1>
+     	 </div>
+     	 
+    </div>
+	 
+	<!-- collapsible power station list -->
+	<!-- error/alarm -->
+	<ul class="collapsible popout " data-collapsible="accordion">
+		<li>
+			<!-- collapsible header -->
+			<div class="collapsible-header">
+				<a href="http://211.75.6.101/solar/index1.aspx?boardno=001" target="_blank">
+					<i class="material-icons stationStatus_alarm">cloud</i> 
+				</a> 
+				<span class="title">案廠名稱1</span>
+				<span class="  badge">
+					<i class="material-icons">keyboard_arrow_down</i>
+				</span>
+			</div>
+			<!-- collapsible body -->
+			<div class="collapsible-body">
+				<table class="responsive-table">
+					<thead>
+						<tr>
+							<th>系統建置量</th>
+							<th>今日發電量</th> 
+							<th>最後更新時間</th>
+							<th>錯誤訊息</th> 
+							<th>座標</th>
+							<th>聯絡電話</th>	
+						</tr>
+					</thead>
+
+					<tbody>
+						<tr>
+							<td>499.9 <span>kWp</span></td>
+							<td>12 <span>kWp</span></td>
+							<td>2018-02-07 10:36:52</td>
+							<!-- 錯誤訊息 放error/alarm massage  -->
+							<td>部份Inverter未發電:逆變器1, 逆變器3 </td> 
+							<td>23.464110, 120.226797</td>
+							<td>053795188</td>
+						</tr> 
+					</tbody>
+				</table> 
+			</div>
+		</li>
+
+		
+		<li>
+			<!-- collapsible header -->
+			<div class="collapsible-header">
+				<a href="http://211.75.6.101/solar/index1.aspx?boardno=001" target="_blank">
+					<i class="material-icons stationStatus_alarm">cloud</i> 
+				</a> 
+				<span class="title">案廠名稱2</span>
+				<span class="  badge">
+					<i class="material-icons">keyboard_arrow_down</i>
+				</span>
+			</div>
+			<!-- collapsible body -->
+			<div class="collapsible-body">
+				<table class="responsive-table">
+					<thead>
+						<tr>
+							<th>系統建置量</th>
+							<th>今日發電量</th> 
+							<th>最後更新時間</th>
+							<th>錯誤訊息</th> 
+						</tr>
+					</thead>
+
+					<tbody>
+						<tr>
+							<td>499.9 <span>kWp</span></td>
+							<td>12 <span>kWp</span></td>
+							<td>2018-02-07 10:36:52</td>
+							<!-- 錯誤訊息 放error/alarm massage  -->
+							<td>部份Inverter未發電:逆變器1, 逆變器3 </td> 
+						</tr> 
+					</tbody>
+				</table> 
+			</div>
+		</li>
+
+		<li>
+			<!-- collapsible header -->
+			<div class="collapsible-header">
+				<a href="http://211.75.6.101/solar/index1.aspx?boardno=001" target="_blank">
+					<i class="material-icons stationStatus_alarm">cloud</i> 
+				</a> 
+				<span class="title">案廠名稱3</span>
+				<span class="  badge">
+					<i class="material-icons">keyboard_arrow_down</i>
+				</span>
+			</div>
+			<!-- collapsible body -->
+			<div class="collapsible-body">
+				<table class="responsive-table">
+					<thead>
+						<tr>
+							<th>系統建置量</th>
+							<th>今日發電量</th> 
+							<th>最後更新時間</th>
+							<th>錯誤訊息</th> 
+						</tr>
+					</thead>
+
+					<tbody>
+						<tr>
+							<td>499.9 <span>kWp</span></td>
+							<td>12 <span>kWp</span></td>
+							<td>2018-02-07 10:36:52</td>
+							<!-- 錯誤訊息 放error/alarm massage  -->
+							<td>部份Inverter未發電:逆變器1, 逆變器3 </td> 
+						</tr> 
+					</tbody>
+				</table> 
+			</div>
+		</li>
+
+		<li>
+			<!-- collapsible header -->
+			<div class="collapsible-header">
+				<a href="http://211.75.6.101/solar/index1.aspx?boardno=001" target="_blank">
+					<i class="material-icons stationStatus_alarm">cloud</i> 
+				</a> 
+				<span class="title">案廠名稱4</span>
+				<span class="  badge">
+					<i class="material-icons">keyboard_arrow_down</i>
+				</span>
+			</div>
+			<!-- collapsible body -->
+			<div class="collapsible-body">
+				<table class="responsive-table">
+					<thead>
+						<tr>
+							<th>系統建置量</th>
+							<th>今日發電量</th> 
+							<th>最後更新時間</th>
+							<th>錯誤訊息</th> 
+						</tr>
+					</thead>
+
+					<tbody>
+						<tr>
+							<td>499.9 <span>kWp</span></td>
+							<td>12 <span>kWp</span></td>
+							<td>2018-02-07 10:36:52</td>
+							<!-- 錯誤訊息 放error/alarm massage  -->
+							<td>部份Inverter未發電:逆變器1, 逆變器3 </td> 
+						</tr> 
+					</tbody>
+				</table> 
+			</div>
+		</li>
+
+		<li>
+			<!-- collapsible header -->
+			<div class="collapsible-header">
+				<a href="http://211.75.6.101/solar/index1.aspx?boardno=001" target="_blank">
+					<i class="material-icons stationStatus_alarm">cloud</i> 
+				</a> 
+				<span class="title">案廠名稱5</span>
+				<span class="  badge">
+					<i class="material-icons">keyboard_arrow_down</i>
+				</span>
+			</div>
+			<!-- collapsible body -->
+			<div class="collapsible-body">
+				<table class="responsive-table">
+					<thead>
+						<tr>
+							<th>系統建置量</th>
+							<th>今日發電量</th> 
+							<th>最後更新時間</th>
+							<th>錯誤訊息</th> 
+						</tr>
+					</thead>
+
+					<tbody>
+						<tr>
+							<td>499.9 <span>kWp</span></td>
+							<td>12 <span>kWp</span></td>
+							<td>2018-02-07 10:36:52</td>
+							<!-- 錯誤訊息 放error/alarm massage  -->
+							<td>部份Inverter未發電:逆變器1, 逆變器3 </td> 
+						</tr> 
+					</tbody>
+				</table> 
+			</div>
+		</li>
+	</ul>
+
+	<!-- end of error/alarm -->
+
+
+
+	<!-- offline -->
+	<ul class="collapsible popout " data-collapsible="accordion">
+		<li>
+			<!-- collapsible header -->
+			<div class="collapsible-header">
+				<a href="http://211.75.6.101/solar/index1.aspx?boardno=001" target="_blank">
+					<i class="material-icons stationStatus_offline">cloud</i> 
+				</a> 
+				<span class="title">案廠名稱1</span>
+				<span class="  badge">
+					<i class="material-icons">keyboard_arrow_down</i>
+				</span>
+			</div>
+			<!-- collapsible body -->
+			<div class="collapsible-body">
+				<table class="responsive-table">
+					<thead>
+						<tr>
+							<th>系統建置量</th>
+							<th>今日發電量</th> 
+							<th>最後更新時間</th>
+							<th>錯誤訊息</th> 
+						</tr>
+					</thead>
+
+					<tbody>
+						<tr>
+							<td>499.9 <span>kWp</span></td>
+							<td>12 <span>kWp</span></td>
+							<td>2018-02-07 10:36:52</td>
+							<td>資訊未傳送 </td>  
+						</tr> 
+					</tbody>
+				</table> 
+			</div>
+		</li>
+
+		
+		<li>
+			<!-- collapsible header -->
+			<div class="collapsible-header">
+				<a href="http://211.75.6.101/solar/index1.aspx?boardno=001" target="_blank">
+					<i class="material-icons stationStatus_offline">cloud</i> 
+				</a> 
+				<span class="title">案廠名稱2</span>
+				<span class="  badge">
+					<i class="material-icons">keyboard_arrow_down</i>
+				</span>
+			</div>
+			<!-- collapsible body -->
+			<div class="collapsible-body">
+				<table class="responsive-table">
+					<thead>
+						<tr>
+							<th>系統建置量</th>
+							<th>今日發電量</th> 
+							<th>最後更新時間</th>
+							<th>錯誤訊息</th> 
+						</tr>
+					</thead>
+
+					<tbody>
+						<tr>
+							<td>499.9 <span>kWp</span></td>
+							<td>12 <span>kWp</span></td>
+							<td>2018-02-07 10:36:52</td>
+							<td>資訊未傳送 </td> 
+						</tr> 
+					</tbody>
+				</table> 
+			</div>
+		</li>
+
+		<li>
+			<!-- collapsible header -->
+			<div class="collapsible-header">
+				<a href="http://211.75.6.101/solar/index1.aspx?boardno=001" target="_blank">
+					<i class="material-icons stationStatus_offline">cloud</i> 
+				</a> 
+				<span class="title">案廠名稱3</span>
+				<span class="  badge">
+					<i class="material-icons">keyboard_arrow_down</i>
+				</span>
+			</div>
+			<!-- collapsible body -->
+			<div class="collapsible-body">
+				<table class="responsive-table">
+					<thead>
+						<tr>
+							<th>系統建置量</th>
+							<th>今日發電量</th> 
+							<th>最後更新時間</th>
+							<th>錯誤訊息</th> 
+						</tr>
+					</thead>
+
+					<tbody>
+						<tr>
+							<td>499.9 <span>kWp</span></td>
+							<td>12 <span>kWp</span></td>
+							<td>2018-02-07 10:36:52</td> 
+							<td>資訊未傳送 </td> 
+						</tr> 
+					</tbody>
+				</table> 
+			</div>
+		</li>
+	</ul>
+
+	<!-- end of offline -->
+
+
+
+
+	<!-- running -->
+	<ul class="collapsible popout " data-collapsible="accordion">
+		<li>
+			<!-- collapsible header -->
+			<div class="collapsible-header">
+				<a href="http://211.75.6.101/solar/index1.aspx?boardno=001" target="_blank">
+					<i class="material-icons stationStatus_running">cloud</i> 
+				</a> 
+				<span class="title">案廠名稱1</span> 
+				<span class="  badge">
+					<i class="material-icons">keyboard_arrow_down</i>
+				</span>
+			</div>
+			<!-- collapsible body -->
+			<div class="collapsible-body">
+				<table class="responsive-table">
+					<thead>
+						<tr>
+							<th>系統建置量</th>
+							<th>今日發電量</th> 
+							<th>最後更新時間</th>
+							<th>錯誤訊息</th> 
+						</tr>
+					</thead>
+
+					<tbody>
+						<tr>
+							<td>499.9 <span>kWp</span></td>
+							<td>12 <span>kWp</span></td>
+							<td>2018-02-07 10:36:52</td>
+							<td>無</td> 
+						</tr> 
+					</tbody>
+				</table> 
+			</div>
+		</li>
+
+		
+		<li>
+			<!-- collapsible header -->
+			<div class="collapsible-header">
+				<a href="http://211.75.6.101/solar/index1.aspx?boardno=001" target="_blank">
+					<i class="material-icons stationStatus_running">cloud</i> 
+				</a> 
+				<span class="title">案廠名稱2</span>
+				<span class="  badge">
+					<i class="material-icons">keyboard_arrow_down</i>
+				</span>
+			</div>
+			<!-- collapsible body -->
+			<div class="collapsible-body">
+				<table class="responsive-table">
+					<thead>
+						<tr>
+							<th>系統建置量</th>
+							<th>今日發電量</th> 
+							<th>最後更新時間</th>
+							<th>錯誤訊息</th> 
+						</tr>
+					</thead>
+
+					<tbody>
+						<tr>
+							<td>499.9 <span>kWp</span></td>
+							<td>12 <span>kWp</span></td>
+							<td>2018-02-07 10:36:52</td>
+							<td>無</td> 
+						</tr> 
+					</tbody>
+				</table> 
+			</div>
+		</li>
+
+		<li>
+			<!-- collapsible header -->
+			<div class="collapsible-header">
+				<a href="http://211.75.6.101/solar/index1.aspx?boardno=001" target="_blank">
+					<i class="material-icons stationStatus_running">cloud</i> 
+				</a> 
+				<span class="title">案廠名稱3</span>
+				<span class="  badge">
+					<i class="material-icons">keyboard_arrow_down</i>
+				</span>
+			</div>
+			<!-- collapsible body -->
+			<div class="collapsible-body">
+				<table class="responsive-table">
+					<thead>
+						<tr>
+							<th>系統建置量</th>
+							<th>今日發電量</th> 
+							<th>最後更新時間</th>
+							<th>錯誤訊息</th> 
+						</tr>
+					</thead>
+
+					<tbody>
+						<tr>
+							<td>499.9 <span>kWp</span></td>
+							<td>12 <span>kWp</span></td>
+							<td>2018-02-07 10:36:52</td>
+							<td>無</td> 
+						</tr> 
+					</tbody>
+				</table> 
+			</div>
+		</li>
+
+		<li>
+			<!-- collapsible header -->
+			<div class="collapsible-header">
+				<a href="http://211.75.6.101/solar/index1.aspx?boardno=001" target="_blank">
+					<i class="material-icons stationStatus_running">cloud</i> 
+				</a> 
+				<span class="title">案廠名稱4</span>
+				<span class="  badge">
+					<i class="material-icons">keyboard_arrow_down</i>
+				</span>
+			</div>
+			<!-- collapsible body -->
+			<div class="collapsible-body">
+				<table class="responsive-table">
+					<thead>
+						<tr>
+							<th>系統建置量</th>
+							<th>今日發電量</th> 
+							<th>最後更新時間</th>
+							<th>錯誤訊息</th> 
+						</tr>
+					</thead>
+
+					<tbody>
+						<tr>
+							<td>499.9 <span>kWp</span></td>
+							<td>12 <span>kWp</span></td>
+							<td>2018-02-07 10:36:52</td>
+							<td>無</td> 
+						</tr> 
+					</tbody>
+				</table> 
+			</div>
+		</li>
+
+		<li>
+			<!-- collapsible header -->
+			<div class="collapsible-header">
+				<a href="http://211.75.6.101/solar/index1.aspx?boardno=001" target="_blank">
+					<i class="material-icons stationStatus_running">cloud</i> 
+				</a> 
+				<span class="title">案廠名稱5</span>
+				<span class="  badge">
+					<i class="material-icons">keyboard_arrow_down</i>
+				</span>
+			</div>
+			<!-- collapsible body -->
+			<div class="collapsible-body">
+				<table class="responsive-table">
+					<thead>
+						<tr>
+							<th>系統建置量</th>
+							<th>今日發電量</th> 
+							<th>最後更新時間</th>
+							<th>錯誤訊息</th> 
+						</tr>
+					</thead>
+
+					<tbody>
+						<tr>
+							<td>499.9 <span>kWp</span></td>
+							<td>12 <span>kWp</span></td>
+							<td>2018-02-07 10:36:52</td>
+							<td>無</td>  
+						</tr> 
+					</tbody>
+				</table> 
+			</div>
+		</li>
+
+		<li>
+			<!-- collapsible header -->
+			<div class="collapsible-header">
+				<a href="http://211.75.6.101/solar/index1.aspx?boardno=001" target="_blank">
+					<i class="material-icons stationStatus_running">cloud</i> 
+				</a> 
+				<span class="title">案廠名稱6</span>
+				<span class="  badge">
+					<i class="material-icons">keyboard_arrow_down</i>
+				</span>
+			</div>
+			<!-- collapsible body -->
+			<div class="collapsible-body">
+				<table class="responsive-table">
+					<thead>
+						<tr>
+							<th>系統建置量</th>
+							<th>今日發電量</th> 
+							<th>最後更新時間</th>
+							<th>錯誤訊息</th> 
+						</tr>
+					</thead>
+
+					<tbody>
+						<tr>
+							<td>499.9 <span>kWp</span></td>
+							<td>12 <span>kWp</span></td>
+							<td>2018-02-07 10:36:52</td>
+							<td>無</td> 
+						</tr> 
+					</tbody>
+				</table> 
+			</div>
+		</li>
+
+		<li>
+			<!-- collapsible header -->
+			<div class="collapsible-header">
+				<a href="http://211.75.6.101/solar/index1.aspx?boardno=001" target="_blank">
+					<i class="material-icons stationStatus_running">cloud</i> 
+				</a> 
+				<span class="title">案廠名稱7</span>
+				<span class="  badge">
+					<i class="material-icons">keyboard_arrow_down</i>
+				</span>
+			</div>
+			<!-- collapsible body -->
+			<div class="collapsible-body">
+				<table class="responsive-table">
+					<thead>
+						<tr>
+							<th>系統建置量</th>
+							<th>今日發電量</th> 
+							<th>最後更新時間</th>
+							<th>錯誤訊息</th> 
+						</tr>
+					</thead>
+
+					<tbody>
+						<tr>
+							<td>499.9 <span>kWp</span></td>
+							<td>12 <span>kWp</span></td>
+							<td>2018-02-07 10:36:52</td>
+							<td>無</td> 
+						</tr> 
+					</tbody>
+				</table> 
+			</div>
+		</li>
+
+		<li>
+			<!-- collapsible header -->
+			<div class="collapsible-header">
+				<a href="http://211.75.6.101/solar/index1.aspx?boardno=001" target="_blank">
+					<i class="material-icons stationStatus_running">cloud</i> 
+				</a> 
+				<span class="title">案廠名稱8</span>
+				<span class="  badge">
+					<i class="material-icons">keyboard_arrow_down</i>
+				</span>
+			</div>
+			<!-- collapsible body -->
+			<div class="collapsible-body">
+				<table class="responsive-table">
+					<thead>
+						<tr>
+							<th>系統建置量</th>
+							<th>今日發電量</th> 
+							<th>最後更新時間</th>
+							<th>錯誤訊息</th> 
+						</tr>
+					</thead>
+
+					<tbody>
+						<tr>
+							<td>499.9 <span>kWp</span></td>
+							<td>12 <span>kWp</span></td>
+							<td>2018-02-07 10:36:52</td>
+							<td>無</td>  
+						</tr> 
+					</tbody>
+				</table> 
+			</div>
+		</li>
+
+		<li>
+			<!-- collapsible header -->
+			<div class="collapsible-header">
+				<a href="http://211.75.6.101/solar/index1.aspx?boardno=001" target="_blank">
+					<i class="material-icons stationStatus_running">cloud</i> 
+				</a> 
+				<span class="title">案廠名稱9</span>
+				<span class="  badge">
+					<i class="material-icons">keyboard_arrow_down</i>
+				</span>
+			</div>
+			<!-- collapsible body -->
+			<div class="collapsible-body">
+				<table class="responsive-table">
+					<thead>
+						<tr>
+							<th>系統建置量</th>
+							<th>今日發電量</th> 
+							<th>最後更新時間</th>
+							<th>錯誤訊息</th> 
+						</tr>
+					</thead>
+
+					<tbody>
+						<tr>
+							<td>499.9 <span>kWp</span></td>
+							<td>12 <span>kWp</span></td>
+							<td>2018-02-07 10:36:52</td>
+							<td>無</td> 
+						</tr> 
+					</tbody>
+				</table> 
+			</div>
+		</li>
+
+		<li>
+			<!-- collapsible header -->
+			<div class="collapsible-header">
+				<a href="http://211.75.6.101/solar/index1.aspx?boardno=001" target="_blank">
+					<i class="material-icons stationStatus_running">cloud</i> 
+				</a> 
+				<span class="title">案廠名稱10</span>
+				<span class="  badge">
+					<i class="material-icons">keyboard_arrow_down</i>
+				</span>
+			</div>
+			<!-- collapsible body -->
+			<div class="collapsible-body">
+				<table class="responsive-table">
+					<thead>
+						<tr>
+							<th>系統建置量</th>
+							<th>今日發電量</th> 
+							<th>最後更新時間</th>
+							<th>錯誤訊息</th> 
+						</tr>
+					</thead>
+
+					<tbody>
+						<tr>
+							<td>499.9 <span>kWp</span></td>
+							<td>12 <span>kWp</span></td>
+							<td>2018-02-07 10:36:52</td>
+							<td>無</td> 
+						</tr> 
+					</tbody>
+				</table> 
+			</div>
+		</li>
+	</ul>
+
+	<!-- end of running -->
+	<!-- end of collapsible power station list -->
+
+	
+</body>
+
+ <script type="text/javascript">
+	$(document).ready(function(){
+		$('.parallax').parallax();
+		$('.collapsible').collapsible();
+	});
+
+	</script>
+</html>
