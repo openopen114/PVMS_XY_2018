@@ -105,12 +105,18 @@ body{
 
 	.invList{
 		width: 100%;
-		height: 160px; 
+		height: 160px;  
+		overflow: hidden;
 	}
 
 	.input-field{  
-		margin-top: 28px;  
+		margin-top: 28px;   
+	}
 
+
+	.invArea .col{
+		height: 1220px;  
+		overflow: visible;
 	}
 
 }
