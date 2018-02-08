@@ -24,7 +24,9 @@ body{
 }
 
 
-
+/*************************/
+/*       parallax        */
+/*************************/
 .parallax-container{
 	display:flex; 
 	justify-content:center;
@@ -53,6 +55,11 @@ body{
 
 }
 
+
+
+/*************************/
+/*     collapsible       */
+/*************************/
 .collapsible-header{
 	border-bottom: 0px solid gray;
 }

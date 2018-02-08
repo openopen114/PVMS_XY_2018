@@ -1,0 +1,175 @@
+ 
+html{
+	color: #fff;
+	overflow: hidden;
+}
+body{
+	font-family: "Microsoft JhengHei", sans-serif;
+	background-color: #FFF;
+}
+
+/*  #F1F2F6; */
+/*************************/
+/*          nav          */
+/*************************/
+.nav-wrapper{
+	background-color: #323F4F;   
+}
+
+
+.brand-logo{
+	margin-left: 8px;
+	font-family: 'Montserrat', sans-serif;	 
+}
+
+.brand-logo img{
+	width: 128px;
+	height: 28px; 
+}
+
+
+
+
+.bg{
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	z-index: -1;
+}
+
+.bg img{  
+	width: 100%;
+	object-fit: cover;
+	font-family: 'object-fit: cover;';
+}
+
+ @media (max-width: 540px) { img { height: 100%;object-fit: contain; } }
+
+
+
+/*************************/
+/*       parallax        */
+/*************************/
+.parallax-container{
+	display:flex; 
+	justify-content:center;
+	align-items:center;
+}
+
+
+ 
+
+.header{
+	width: 50%;
+	margin-top: 150px; 
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	display:flex; 
+	justify-content:flex-start;
+	flex-direction:column;   
+}
+
+ @media (max-width: 540px) {
+ 	.header {
+ 		width: 100%;
+ 		margin-top: 10px; 
+ 	} 
+ }
+
+
+
+
+
+.header h4{
+	font-family: 'Questrial', sans-serif;
+	color: #fff;
+	font-size: 30px;
+	margin-left: 8px;
+
+}
+
+.header h1{
+	font-family: 'Lato', sans-serif; 
+	color: #fff;
+	font-size: 75px;
+	margin-top: -30px;
+
+}
+
+
+.form{ 
+	width: 100vw; 
+	display:inline-flex; 
+	margin-top: 16px;
+	justify-content:center;
+	align-items:center; 
+}
+
+ @media (max-width: 540px) {
+ 	.form {
+ 		 display:flex; 
+ 		 flex-direction:column;
+ 		 flex-wrap:wrap;
+ 		 justify-content:center;
+ 		 align-items:center;
+ 	} 
+ }
+
+
+.input-field{ 
+	width: 25%;  
+}
+
+
+ @media (max-width: 540px) {
+ 	.input-field {
+ 		width: 90vw;  
+ 	} 
+ }
+
+
+#label {
+	color: #fff;
+}
+#password{
+	border-bottom:  2px solid #fff;
+}
+
+
+.submitBtn{
+	margin-left: 30px;
+}
+
+
+@media (max-width: 540px) {
+ 	.submitBtn {
+ 		margin-left: 0px;
+ 		width: 90vw;  
+ 	} 
+ }
+
+
+
+.btn{ 
+	height: 34px;
+	width: 180px;
+	margin-top: 10px;
+	display:inline-flex;
+	justify-content:center;
+	align-items:center;
+	background-color: #0091EA;
+	color: #fff;
+}
+
+@media (max-width: 540px) {
+ 	.btn {
+ 		width: 90vw;   
+ 		border: 2px solid blue;
+ 	} 
+ }
+
+.btn:hover{
+	background-color: #01579B;
+	color: #fff;
+}
