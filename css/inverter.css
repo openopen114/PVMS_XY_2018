@@ -54,6 +54,7 @@ body{
 .invStatus{
 	display:flex;
 	align-items:baseline;
+	cursor: pointer;
 }
 
 .invStatus h3{
@@ -105,9 +106,6 @@ body{
 	.invList{
 		width: 100%;
 		height: 160px; 
-
-
-
 	}
 
 	.input-field{  
