@@ -26,48 +26,73 @@ body{
 
 
 /*************************/
-/*    station info       */
+/*      main info        */
 /*************************/
-
-.stationPhoto{
-	width: 100%;
-	height: 380px;
-}
-.stationPhoto img{
-	width: 100%;
-	height: 380px;
-	object-fit: cover;
-	font-family: 'object-fit: cover;';
-}
-
-
- @media only screen and (max-width: 540px){
-
- 	.stationPhoto,.stationPhoto img{
- 		height: 150px; 
- 	}
- }
-
-
-.chart{
-	width: 60vw;
-	height: 600px; 
-	background-color: #fff;
-}
-
- @media only screen and (max-width: 540px){
- 	.chart{
- 		height: 150px; 
- 	}
- }
-
-.card-action{
-	color: #ffab40 ;
-}
-
-
-
  
+.caseInfo{
+	height: 380px;
+	background-color: #009DE4;
+	display:flex;
+	flex-direction:column;
+	font-family: 'Heebo', sans-serif;
+}
+
+
+.caseInfoData{ 
+	margin-top: 4px;
+	height: 180px;
+	color: #fff;
+	
+}
+
+
+.caseInfoData .title {
+	width: 100%;
+	height: 35%;
+	display:inline-flex;
+	justify-content:space-between;
+	align-items:baseline; 
+	border-bottom: 3px solid #fff;
+	
+}
+
+
+.caseInfoData   h5{
+	font-size: 20px;
+}
+
+
+
+
+.caseInfoTotal{ 
+	height: 120px;
+	margin-top: 80px; 
+}
+
+.caseInfoTotal h5{
+	color: #fff;
+	font-size: 20px;
+}
+
+.caseInfoTotal .total{
+	width: 100%;
+	height: 28px;
+	display:inline-flex;
+	justify-content:space-between;
+	align-items:baseline; 
+}
+
+.total .valueUnit{
+	display:inline-flex;
+	align-items:baseline; 
+	color: #fff;
+}
+.total .valueUnit h5 {
+	margin-left: 8px;
+	margin-right: 8px;
+}
+
+
 
 
 /*************************/

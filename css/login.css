@@ -18,7 +18,7 @@ body{
 /*          nav          */
 /*************************/
 .nav-wrapper{
-	background-color: #323F4F;   
+	background-color: #fff;   
 }
 
 
@@ -28,8 +28,9 @@ body{
 }
 
 .brand-logo img{
-	width: 128px;
-	height: 28px; 
+	width: 280px;
+	height: 48px; 
+	margin-top: 10px;
 }
 
 
